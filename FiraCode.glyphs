@@ -1599,12 +1599,14 @@ lookup question_equal {
   sub question'       equal  by question.spacer;
 } question_equal;
 
-lookup question_period {
-  ignore sub question question' period;
-  ignore sub question' period period;
-  sub question.spacer period' by question_period.liga;
-  sub question'       period  by question.spacer;
-} question_period;
+## Niclas: Disable ?.
+## It's an operator in some languages, but it's distracting in Roc and Rust
+# lookup question_period {
+#   ignore sub question question' period;
+#   ignore sub question' period period;
+#   sub question.spacer period' by question_period.liga;
+#   sub question'       period  by question.spacer;
+# } question_period;
 
 lookup question_question {
   ignore sub question question' question;

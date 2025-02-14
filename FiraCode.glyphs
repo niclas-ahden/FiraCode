@@ -893,7 +893,9 @@ sub period question by period_question.liga;
 sub plus greater by plus_greater.liga;
 sub plus plus by plus_plus.liga;
 sub question equal by question_equal.liga;
-sub question period by question_period.liga;
+## Niclas: Disable ?.
+## It's an operator in some languages, but it's distracting in Roc and Rust
+# sub question period by question_period.liga;
 sub question question by question_question.liga;
 sub semicolon semicolon by semicolon_semicolon.liga;
 sub slash asterisk by slash_asterisk.liga;
